@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2745ae26b9fc75e498c91eee673b9ae8, type: 3}
+  m_Name: Karla Cripps
+  m_EditorClassIdentifier: 
+  IsFemale: 1
+  NameIndex: 4
+  SurnameIndex: 111
+  IconIndex: 0
+  Stats: 080000000a0000000e0000000d0000000a0000000b000000
+  VisualName: Karla Cripps
+  VisualIcon: {fileID: 21300000, guid: 919ba308a343d6a41b430ec06aafc94a, type: 3}
