@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: NewCharacter
   m_EditorClassIdentifier: 
   IsFemale: 0
-  NameIndex: 3
-  SurnameIndex: 85
-  IconIndex: 19
-  Stats: 0d0000000b0000000a0000000b0000000b0000000a000000
-  VisualName: Vince Hey
-  VisualIcon: {fileID: 21300000, guid: a673ac8a280897d4ab5f9f9fec0e884c, type: 3}
+  NameIndex: -1
+  SurnameIndex: 0
+  IconIndex: 0
+  Stats: 
+  CurrentHealth: 0
+  VisualName: 
+  VisualIcon: {fileID: 0}
+  notes: 

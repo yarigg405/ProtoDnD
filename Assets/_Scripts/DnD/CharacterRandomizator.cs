@@ -64,7 +64,7 @@ namespace Game
 
 
         [ContextMenu("RegenerateCharacters")]
-        private void RegenerateCharacters()
+        public void RegenerateCharacters()
         {
             foreach (var ch in characters)
             {
@@ -77,28 +77,29 @@ namespace Game
         private void RegenerateCharacter(Character character)
         {
             if (!character) return;
+            if (character.NameIndex < 0)
+            {
+                var stats = GenerateStats();
 
-            var stats = GenerateStats();
+                character.Stats = stats;
+                character.CurrentHealth = stats[2];
 
-            Debug.LogError("HERE!!");
+                var isFemale = Random.Range(0f, 1f) < 0.45f;
+                var name = GenerateName(isFemale);
+                var surname = GenerateSurname();
+                var icon = GenerateIcon(isFemale);
 
-            // character.Stats = stats;
-
-            var isFemale = Random.Range(0f, 1f) < 0.45f;
-            var name = GenerateName(isFemale);
-            var surname = GenerateSurname();
-            var icon = GenerateIcon(isFemale);
-
-            character.IsFemale = isFemale;
-            character.NameIndex = name;
-            character.SurnameIndex = surname;
-            character.IconIndex = icon;
+                character.IsFemale = isFemale;
+                character.NameIndex = name;
+                character.SurnameIndex = surname;
+                character.IconIndex = icon;
+            }
 
 
             var visualName =
-                character.IsFemale ?
-                $"{storage.FemaleNames[character.NameIndex]} {storage.Surnames[character.SurnameIndex]}" :
-                $"{storage.MaleNames[character.NameIndex]} {storage.Surnames[character.SurnameIndex]}";
+                    character.IsFemale ?
+                    $"{storage.FemaleNames[character.NameIndex]} {storage.Surnames[character.SurnameIndex]}" :
+                    $"{storage.MaleNames[character.NameIndex]} {storage.Surnames[character.SurnameIndex]}";
 
             character.VisualName = visualName;
             character.name = visualName;

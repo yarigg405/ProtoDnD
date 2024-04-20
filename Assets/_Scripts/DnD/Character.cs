@@ -10,10 +10,13 @@ namespace Game.DnD
     internal sealed class Character : ScriptableObject
     {
         public bool IsFemale;
-        public int NameIndex;
+        public int NameIndex=-1;
         public int SurnameIndex;
         public int IconIndex;
-        public UnityDictionary<CharacterStats, int> Stats = new();
+        public int[] Stats;
+
+        public int CurrentHealth;
+
 
         [Space]
         [Space]
@@ -22,10 +25,10 @@ namespace Game.DnD
 
         [ReadOnly]
         public Sprite VisualIcon;
-
-
         [Header("Заметки, описание")]
         [TextArea]
         [SerializeField] private string notes;
+
+        internal string Description => notes;
     }
 }

@@ -25,7 +25,7 @@ namespace Game
 
 
         [ContextMenu("RegenerateNames")]
-        private void RegenerateNames()
+        public void RegenerateNames()
         {
             MaleNames = maleNames.Replace(" ", "").Split(",", System.StringSplitOptions.RemoveEmptyEntries);
             FemaleNames = femaleNames.Split(",", System.StringSplitOptions.RemoveEmptyEntries);
