@@ -102,7 +102,7 @@ namespace Game
                     $"{storage.MaleNames[character.NameIndex]} {storage.Surnames[character.SurnameIndex]}";
 
             character.VisualName = visualName;
-            character.name = visualName;
+           // character.name = visualName;
 
             var visualIcon =
                 character.IsFemale ?

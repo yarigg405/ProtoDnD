@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using Yrr.Utils;
 
 
@@ -10,7 +11,7 @@ namespace Game.DnD
     internal sealed class Character : ScriptableObject
     {
         public bool IsFemale;
-        public int NameIndex=-1;
+        public int NameIndex = -1;
         public int SurnameIndex;
         public int IconIndex;
         public int[] Stats;
@@ -30,5 +31,20 @@ namespace Game.DnD
         [SerializeField] private string notes;
 
         internal string Description => notes;
+
+
+        internal int GetStatBonus(CharacterStats stat)
+        {
+            var value = Stats[(int)stat];
+
+            return GetStatBonus(value);
+        }
+
+        private int GetStatBonus(int statValue)
+        {
+            var modificator = (int)Math.Floor((statValue - 10) / 2d);
+            return modificator;
+        }
+
     }
 }

@@ -38,26 +38,19 @@ namespace Game
             nameTmp.text = character.VisualName;
             descriptionTmp.text = character.Description;
 
-            StrTmp.text = $"Сила \t{GetStatBonusText(character.Stats[0])}";
-            AgiTmp.text = $"Ловк \t{GetStatBonusText(character.Stats[1])}";
+            StrTmp.text = $"Сила \t{GetStatBonusText(CharacterStats.Strength)}";
+            AgiTmp.text = $"Ловк \t{GetStatBonusText(CharacterStats.Agility)}";
             HpTmp.text = $"{character.CurrentHealth}/{character.Stats[2]}";
-            IntTmp.text = $"Инт \t{GetStatBonusText(character.Stats[3])}";
-            WisTmp.text = $"Мдр \t{GetStatBonusText(character.Stats[4])}";
-            ChaTmp.text = $"Хар \t{GetStatBonusText(character.Stats[5])}";
+            IntTmp.text = $"Инт \t{GetStatBonusText(CharacterStats.Intelligence)}";
+            WisTmp.text = $"Мдр \t{GetStatBonusText(CharacterStats.Wisdom)}";
+            ChaTmp.text = $"Хар \t{GetStatBonusText(CharacterStats.Charisma)}";
         }
 
-        private string GetStatBonusText(int stat)
+        private string GetStatBonusText(CharacterStats stat)
         {
-            var modificator = GetStatBonus(stat);
+            var modificator = character.GetStatBonus(stat);
             return " (" + (modificator < 0 ? modificator + ")" : ("+" + modificator) + ")");
         }
-
-        private int GetStatBonus(int statValue)
-        {
-            var modificator = (int)Math.Floor((statValue - 10) / 2d);
-            return modificator;
-        }
-
 
         private void OnValidate()
         {
