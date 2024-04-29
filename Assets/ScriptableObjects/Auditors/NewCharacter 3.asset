@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2745ae26b9fc75e498c91eee673b9ae8, type: 3}
-  m_Name: Roman Brutte
+  m_Name: NewCharacter 3
   m_EditorClassIdentifier: 
   IsFemale: 0
-  NameIndex: 33
-  SurnameIndex: 91
-  IconIndex: 23
-  Stats: 0900000009000000090000000a0000000f0000000e000000
-  CurrentHealth: 9
-  VisualName: Roman Brutte
-  VisualIcon: {fileID: 21300000, guid: 8783cf762b2d78e45b947db142764843, type: 3}
-  notes: "\u0420\u043E\u043C\u0430\u043D \u0411\u0440\u0443\u0442"
+  NameIndex: -1
+  SurnameIndex: 0
+  IconIndex: 0
+  Stats: 
+  CurrentHealth: 0
+  VisualName: 
+  VisualIcon: {fileID: 0}
+  notes: 
