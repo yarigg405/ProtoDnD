@@ -52,7 +52,7 @@ namespace Game
             var modifier = character.GetStatBonus(checkStat);
 
             var result = value + modifier;
-            var changeValue = Random.Range(1, 21);
+            var changeValue = Random.Range(1, 21) + modifier;
 
 
             var resultString = $"Dice result is: {value}. Result is: {result}. ";
