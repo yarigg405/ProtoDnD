@@ -4,7 +4,7 @@ using UnityEditor;
 
 namespace Game
 {
-    [CustomEditor(typeof(Task))]
+    [CustomEditor(typeof(Task)), CanEditMultipleObjects]
     internal sealed class TaskEditor : Editor
     {
         public override void OnInspectorGUI()
