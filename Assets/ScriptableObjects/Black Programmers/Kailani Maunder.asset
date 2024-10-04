@@ -16,7 +16,7 @@ MonoBehaviour:
   NameIndex: 60
   SurnameIndex: 107
   IconIndex: 21
-  Stats: 0a0000000a0000000a0000000d0000000d0000000b000000
+  Stats: 0a0000000a0000000a000000100000000e0000000b000000
   CurrentHealth: 10
   VisualName: Kailani Maunder
   VisualIcon: {fileID: 21300000, guid: 9c09695aa39534742891ebd681a60e89, type: 3}

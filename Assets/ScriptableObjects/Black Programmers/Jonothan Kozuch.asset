@@ -16,7 +16,7 @@ MonoBehaviour:
   NameIndex: 24
   SurnameIndex: 68
   IconIndex: 7
-  Stats: 070000000e0000000b0000000c0000000c0000000a000000
+  Stats: 070000000e0000000b0000000d0000000d0000000a000000
   CurrentHealth: 11
   VisualName: Jonothan Kozuch
   VisualIcon: {fileID: 21300000, guid: ddcb8c187bdbc0d44be6bad6c195f24c, type: 3}

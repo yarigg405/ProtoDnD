@@ -16,7 +16,7 @@ MonoBehaviour:
   NameIndex: 10
   SurnameIndex: 65
   IconIndex: 8
-  Stats: 0d000000070000000d0000000f000000090000000b000000
+  Stats: 0d000000070000000d000000110000000a0000000b000000
   CurrentHealth: 13
   VisualName: Magdalena Krupski
   VisualIcon: {fileID: 21300000, guid: 9e1c464d8c469fb4f93e61b20e19ac85, type: 3}

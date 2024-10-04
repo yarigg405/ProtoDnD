@@ -1,5 +1,6 @@
 using Game.DnD;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 
@@ -112,7 +113,8 @@ namespace Game
                 storage.MaleFaces[character.IconIndex];
 
             character.VisualIcon = visualIcon;
-        }
 
+            EditorUtility.SetDirty(character);
+        }
     }
 }
