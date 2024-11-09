@@ -20,4 +20,6 @@ MonoBehaviour:
   CurrentHealth: 11
   VisualName: Jonothan Kozuch
   VisualIcon: {fileID: 21300000, guid: ddcb8c187bdbc0d44be6bad6c195f24c, type: 3}
-  notes: 
+  notes: "\u0425\u0430\u043A\u0435\u0440-\u0444\u0440\u0438\u043B\u0430\u043D\u0441\u0435\u0440.
+    \u042F \u043D\u0430\u0448\u0451\u043B \u0435\u0433\u043E \u043D\u0430 \u043F\u043E\u0434\u043F\u043E\u043B\u044C\u043D\u043E\u043C
+    \u0445\u0430\u043A\u0435\u0440\u0441\u043A\u043E\u043C \u0444\u043E\u0440\u0443\u043C\u0435"
