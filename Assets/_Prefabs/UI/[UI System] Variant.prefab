@@ -2259,7 +2259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4350863013409428627, guid: 1d782be6580a232449fa2678daef9e0c, type: 3}
       propertyPath: m_Name
-      value: CharactersScreen (1)
+      value: Thea Burges
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d782be6580a232449fa2678daef9e0c, type: 3}

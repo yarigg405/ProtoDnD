@@ -34,6 +34,8 @@ namespace Game
         {
             if (!character) return;
 
+            gameObject.name = character.name;
+
             icon.sprite = character.VisualIcon;
             nameTmp.text = character.VisualName;
             descriptionTmp.text = character.Description;

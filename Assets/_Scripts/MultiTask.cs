@@ -1,7 +1,5 @@
-using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 using Game.DnD;
+using UnityEngine;
 
 
 namespace Game
@@ -14,9 +12,9 @@ namespace Game
 
         [Space]
         [SerializeField] private Character[] employees;
-        [SerializeField] private CharacterStats checkStat;
-        [SerializeField] private int difficult = 10;
-        [SerializeField] private int targetCount = 100;
+        [SerializeField] public CharacterStats checkStat;
+        [SerializeField] public int difficult = 10;
+        [SerializeField] public int targetCount = 100;
         [SerializeField] private TaskCheckMode checkMode;
 
 

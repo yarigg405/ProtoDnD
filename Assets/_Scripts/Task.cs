@@ -1,5 +1,6 @@
 using Game.DnD;
 using UnityEngine;
+using UnityEngine.Events;
 
 
 namespace Game
@@ -16,7 +17,7 @@ namespace Game
         [SerializeField] private int difficult = 10;
         [SerializeField] private TaskCheckMode checkMode;
 
-
+        [SerializeField] private MultiTaskGenerator generator;
 
 
         [ContextMenu("Check")]
@@ -52,6 +53,7 @@ namespace Game
             if (value == 20)
             {
                 resultString += "<color=#39A439>CRITICAL SUCCESS!!</color>";
+                Success();
             }
 
             else if (value == 1)
@@ -62,6 +64,7 @@ namespace Game
             else if (result >= difficult)
             {
                 resultString += "<color=#39A439>Success!!</color>";
+                Success();
             }
 
             else
@@ -71,6 +74,21 @@ namespace Game
 
             Debug.Log(resultString);
         }
+
+        private void Success()
+        {
+            if (generator)
+                generator.GenerateMultitask();
+        }
+    }
+
+    [System.Serializable]
+    internal struct TaskEvents
+    {
+        public UnityEvent OnSuccess;
+        public UnityEvent OnCriticalSuccess;
+        public UnityEvent OnFail;
+        public UnityEvent OnCriticalFail;
     }
 
     [System.Serializable]
