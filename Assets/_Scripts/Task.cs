@@ -13,11 +13,12 @@ namespace Game
 
         [Space]
         [SerializeField] private Character character;
-        [SerializeField] private CharacterStats checkStat;
-        [SerializeField] private int difficult = 10;
+        [SerializeField] public CharacterStats checkStat;
+        [SerializeField] public int difficult = 10;
         [SerializeField] private TaskCheckMode checkMode;
 
         [SerializeField] private MultiTaskGenerator generator;
+        [SerializeField] private TaskGenerator taskGenerator;
 
 
         [ContextMenu("Check")]
@@ -79,6 +80,9 @@ namespace Game
         {
             if (generator)
                 generator.GenerateMultitask();
+
+            if(taskGenerator)
+                taskGenerator.GenerateMultitask();
         }
     }
 

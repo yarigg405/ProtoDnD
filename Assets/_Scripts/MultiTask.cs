@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Game
 {
-    internal sealed class MultiTask : MonoBehaviour
+    public sealed class MultiTask : MonoBehaviour
     {
         [TextArea(5, 7)]
         [SerializeField] private string description;
@@ -18,7 +18,6 @@ namespace Game
         [SerializeField] private TaskCheckMode checkMode;
 
 
-        [ContextMenu("Check")]
         public void CheckTask()
         {
             for (int i = 0; i < employees.Length; i++)

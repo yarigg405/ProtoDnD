@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2745ae26b9fc75e498c91eee673b9ae8, type: 3}
+  m_Name: Vlasta Karapetyan
+  m_EditorClassIdentifier: 
+  IsFemale: 1
+  NameIndex: 22
+  SurnameIndex: 32
+  IconIndex: 16
+  Stats: 0b0000000c0000000d0000000a0000000a0000000c000000
+  CurrentHealth: 13
+  VisualName: Vlasta Karapetyan
+  VisualIcon: {fileID: 21300000, guid: d88e3d46e9d7f72479daab8846243c54, type: 3}
+  notes: "29 \u043B\u0435\u0442. \u041C\u0435\u043D\u0435\u0434\u0436\u0435\u0440
+    \u0430\u0432\u0442\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u0430. \u041D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u043E
+    \u043B\u0435\u0442 \u0440\u0430\u0431\u043E\u0442\u0430\u043B\u0430 \u043C\u0435\u043D\u0435\u0434\u0436\u0435\u0440\u043E\u043C,
+    \u043F\u043E\u0442\u043E\u043C \u0430\u0434\u043C\u0438\u043D\u0438\u0441\u0442\u0440\u0430\u0442\u043E\u0440\u043E\u043C.
+    \u041E\u0442\u0432\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u0430 \u0438 \u0443\u0432\u0435\u0440\u0435\u043D\u0430
+    \u0432 \u0441\u0435\u0431\u0435"

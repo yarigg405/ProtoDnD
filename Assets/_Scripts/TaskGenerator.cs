@@ -6,24 +6,22 @@ using Yrr.Utils;
 
 namespace Game
 {
-    internal sealed class MultiTaskGenerator : MonoBehaviour
+    internal sealed class TaskGenerator : MonoBehaviour
     {
-        [SerializeField] private Vector2 difficultMinMax = new Vector2(8, 17);
-        [SerializeField] private Vector2 targetCountMinMax = new Vector2(20, 75);
         [SerializeField] private UnityDictionary<CharacterStats, float> statsSetup;
         [SerializeField] private Transform newTaskParent;
         private RandomizerByWeight<CharacterStats> _randomizator = new();
 
-        [ContextMenu("GenerateMultitask")]
+
+        [ContextMenu("GenerateTask")]
         public void GenerateMultitask()
         {
             FillRandomizator();
 
-            var go = new GameObject("MultiTask");
+            var go = new GameObject("Task");
             go.transform.parent = newTaskParent;
-            var task = go.AddComponent<MultiTask>();
-            task.difficult = Mathf.RoundToInt(difficultMinMax.GetRandomValue());
-            task.targetCount = Mathf.RoundToInt(targetCountMinMax.GetRandomValue());
+            var task = go.AddComponent<Task>();
+            task.difficult = UnityEngine.Random.Range(8, 17);
             var stat = _randomizator.GetRandom();
             task.checkStat = stat;
         }
